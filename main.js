@@ -1,14 +1,15 @@
 
-const loadNews = document.querySelector("#news");
+// const loadRap = document.querySelector("#rap");
 
-loadNews.addEventListener("click", () => {populateNews(myNewsfeed)});
-loadSummary();
+// loadRap.addEventListener("click", () => {populateRapSheet(rapSheetObj)});
+const loadCatPage = document.querySelector("#travel");
+loadCatPage.addEventListener("click", () => {populateCats(BevAndCats)});
+
 const loadBev = document.querySelector("#financial");
-
-// loadBev.addEventListener("click", () => {populateOther(myNewsfeed)});
-
-// document.querySelector("#financial").addEventListener("click", financialPageFunc);
-
-document.querySelector("#travel").addEventListener("click", travelListBuilder);
+loadBev.addEventListener("click", () => {populateOther(BevOther)});
 
 document.querySelector("#summary").addEventListener("click", loadSummary);
+loadSummary();
+
+const loadFitness = document.querySelector("#news");
+loadFitness.addEventListener("click", () => {populateFitness(fitnessBev)});
