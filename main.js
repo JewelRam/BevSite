@@ -1,7 +1,6 @@
 
-// const loadRap = document.querySelector("#rap");
-
-// loadRap.addEventListener("click", () => {populateRapSheet(rapSheetObj)});
+//event listener for populating the CatFragment aka: the cat page
+//And the same for every page in the NavBar
 const loadCatPage = document.querySelector("#travel");
 loadCatPage.addEventListener("click", () => {populateCats(BevAndCats)});
 

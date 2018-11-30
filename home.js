@@ -1,4 +1,4 @@
-// my big object with pictures and titles and shit
+// my big object with pictures and titles and other tags
 const execSummary = {
     manWanted: {
         sectionTitle: "Welcome! Meet Beverly! Aka: BEV",
@@ -39,15 +39,15 @@ const execSummary = {
 
 }
 
-// my giant function
+// my giant function for creating the html
 function loadSummary() {
     const summaryFragment = document.createDocumentFragment();
     // empties the page
     document.querySelector("#art").innerHTML = ""
-    // goes through the smaller objects in my big object
+    // loops through the object and creates the html tags and their attributes
     for (key in execSummary) {
         const detailFragment = document.createElement("div")
-        // if there is a sectionTitle thingy it makes an h1
+        // if there is a sectionTitle  it makes an h1
         if (execSummary[key].sectionTitle != null) {
 
             let hOne = document.createElement("h1");
@@ -56,7 +56,7 @@ function loadSummary() {
             detailFragment.appendChild(hOne);
         }
        
-        // if there is a src thingy it makes an image tag
+        // if there is a src tag it makes an image tag
         if (execSummary[key].src != null) {
             let image = document.createElement("img");
             image.setAttribute("id", "bev-pics");
@@ -64,7 +64,7 @@ function loadSummary() {
             detailFragment.appendChild(image);
 
         }
-        // if there is a pTag thingy it makes a p tag
+        // if there is a pTag it makes a p tag
         if (execSummary[key].pTag != null) {
             let para = document.createElement("p");
             para.setAttribute("class", "pTag");
@@ -78,6 +78,6 @@ function loadSummary() {
         }
         summaryFragment.appendChild(detailFragment)
     }
-    // puts all my shit in the article
+    // puts everything in the summary fragment in the article
     document.querySelector("#art").appendChild(summaryFragment)
 }

@@ -48,7 +48,7 @@ const populateOther = function () {
 //if statement for the sections that have the h3 in it 
         if (BevOther[section].h3 != undefined) {
             let sectionMain = document.createElement("section");
-//these are basicall just creating the elements and then attaching the text and appending to the sectionMain 
+//these are basically just creating the elements and then attaching the text and appending to the sectionMain 
             let sectionH3 = document.createElement("h3");
             sectionH3.setAttribute("id", "other");
             sectionH3.textContent = BevOther[section].h3;

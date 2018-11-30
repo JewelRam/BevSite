@@ -1,4 +1,5 @@
 const BevAndCats = {
+  //the object we're going to loop though to make out html
   section1: {
     h1: "Something Else Bev Is Passionate About Is Cats!",
     h3: "Whether It's Spending Time With Her Beloved Buttface",
