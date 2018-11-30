@@ -116,6 +116,13 @@
     transition: transform .2s; /* Animation */
     
 }
+#fitnessH1 {
+    font-size: 60px;
+    font-family: 'Futura';
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px blue, 0 0 30px aqua, 0 0 40px aquamarine, 0 0 55px blue, 0 0 75px #ff0080;
+
+}
 #fitness {
     font-style: oblique;
     font-weight: 600;
@@ -125,7 +132,17 @@
 #bev-fitness:hover {
     transform: scale(1.5);
 }
+#CatH1 {
+    font-size: 60px;
+    font-family: 'Futura';
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px , 0 0 30px black, 0 0 40px black, 0 0 55px darkred, 0 0 75px darkred;
+}
+
+   
+
 #bev-other {
+    
     max-width: 500px;
     transition: all .2s ease-in-out;
 }
@@ -134,6 +151,13 @@
 }
 #other {
     font-weight: 600;
+}
+#OtherH1 {
+    font-size: 60px;
+    font-family: 'Futura';
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px , 0 0 30px black, 0 0 40px red, 0 0 55px black, 0 0 75px black;
+
 }
 #bev-pics {
     overflow: hidden;
